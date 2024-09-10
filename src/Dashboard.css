@@ -1,0 +1,116 @@
+.dashboard {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.selectors {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.selector,
+.brand-search-container {
+  width: 100%; /* Ajusta este valor si necesitas más o menos espacio entre elementos */
+}
+
+.selector,
+.brand-search-container input {
+  width: 100%;
+  padding: 10px;
+ 
+  font-size: 16px;
+  border: 1px solid #d3d1d1;
+  background-color: #fff;
+  color: #000;
+  box-sizing: border-box;
+  height: 40px; /* Asegura que todos los elementos tengan la misma altura */
+}
+
+.brand-search-container {
+  position: relative;
+}
+
+.brand-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.brand-suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+.brand-suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.chart {
+  width: 100%;
+  height: 300px; /* Ajusta según sea necesario */
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #d2d2d2;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0px;
+}
+.mibtn {
+  border-radius: 0px;
+  border: 0px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+.mibtn:hover{
+  background-color: #000;
+}
