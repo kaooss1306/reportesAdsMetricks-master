@@ -144,7 +144,7 @@ const Dashboard = () => {
       pdf.save('dashboard.pdf');
       
     } catch (error) {
-      console.error('Error al exportar a PDF:', error);
+      console.error('Error al exportar el PDF:', error);
       alert("Hubo un error al exportar el PDF. Por favor, intente de nuevo.");
     }
   };
